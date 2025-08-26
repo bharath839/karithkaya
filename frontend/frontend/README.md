@@ -1,27 +1,53 @@
-# Examfront
+# Project Changes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.10.
+## need update of the  api file to localhost into the ip address
+first need to install the node js 16 version and angular 11 to run this application
+after we setup the application then we need to install node modules 
+then it should run by this cmd to avoid the further issues 
 
-## Development server
+"set NODE_OPTIONS "--openssl-legacy-provider""
+use this before runing the "ng serve" cmd
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+if it running fine then stop the application 
+and run this cmd to build the project to deploy on the nginx 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+ng build
 
-## Build
+then we need to install the nginx in the vm by using this cmd
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+sudo apt install -y nginx
 
-## Running unit tests
+then need to run this cmd to remove existing html file
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+sudo rm -rf /var/www/html/*
 
-## Running end-to-end tests
+copy the build file and replace in the same loaction above 
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+sudo cp -r dist/examfront/* /var/www/html/
 
-## Further help
+update the configuration of the ngix to run configuraation
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+sudo nano /etc/nginx/sites-available/default
+
+update the below in above location 
+.
+server {
+    listen 80;
+
+    server_name _;
+
+    root /var/www/html;
+    index index.html;
+
+    location / {
+        try_files $uri /index.html;
+    }
+}
+
+and before build and deploy need change the the local host by seeing below 
+In this path of this file need to update the file like localhost into ip address of vms  of backend ip address
+"frontend/frontend/src/app/services/helper.ts"
+And also need to update this also
+"frontend/frontend/src/app/services/otherNewUrls.ts"
+ 
