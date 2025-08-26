@@ -1,0 +1,17 @@
+.typing-container {
+  font-family: 'Courier New', monospace;
+  white-space: pre-wrap;   /* preserve line breaks & spacing */
+  overflow: hidden;
+  border-right: 2px solid #000;
+  animation: blink 0.7s step-end infinite alternate;
+  font-size: 18px;
+  line-height: 1.6;
+  padding: 20px;
+  font-weight: bold;       /* Make text bold */
+  color: #1e40af;     
+   text-align: center;           /* Blue color */
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
