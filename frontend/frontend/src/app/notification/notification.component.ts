@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { RabbitmqService } from '../rabbitmq.service';
 import { HttpClient } from '@angular/common/http';
-import { rabbitmqUrl } from '../services/otherNewUrls';
+import { ConfigService } from '../services/config.service';
 
 @Component({
   selector: 'app-notification',
@@ -11,7 +11,7 @@ import { rabbitmqUrl } from '../services/otherNewUrls';
 export class NotificationComponent implements OnInit {
  messages: string[] = [];
   newMessage = '';
-  constructor(  private websocketService: RabbitmqService,private http: HttpClient) { }
+  constructor(  private websocketService: RabbitmqService,private http: HttpClient, private configService: ConfigService) { }
 checkUorA:boolean=false;
   // message: string = '';
   @Input() type: 'success' | 'error' | 'info' | 'warning' = 'info';
@@ -52,7 +52,7 @@ if(check=="admin"){
   this.history = this.hflag ? "Hide all from Redis memory" : "See all messages from Redis memory";
     
 
- this.http.get(`${rabbitmqUrl}/api/messages/history`, {
+ this.http.get(`${this.configService.rabbitmq_url}/api/messages/history`, {
       responseType: 'text'
     }).subscribe((respose:any) =>{
       this.messages=JSON.parse(respose);
@@ -69,7 +69,7 @@ updateVisibleMessages() {
 
  sendMessage(): void {
     if (!this.newMessage.trim()) return;
-    this.http.post(`${rabbitmqUrl}/api/messages/send`, this.newMessage, {
+    this.http.post(`${this.configService.rabbitmq_url}/api/messages/send`, this.newMessage, {
       responseType: 'text'
     }).subscribe(() => this.newMessage = '');
      

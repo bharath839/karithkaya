@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { $ } from 'protractor';
 import { FlagsUiService } from 'src/app/flags-ui.service';
-import { uploadImg } from 'src/app/services/helper';
 import { LoginService } from 'src/app/services/login.service';
 import { UserService } from 'src/app/services/user.service';
+import { ConfigService } from 'src/app/services/config.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -14,15 +13,16 @@ export class SidebarComponent implements OnInit {
 show:boolean=false
   constructor(public login: LoginService,
      public use:UserService,
-        private flagService: FlagsUiService
+        private flagService: FlagsUiService,
+        private configService: ConfigService
   ) { }
   colour:any
 view:boolean=false
   ngOnInit(): void {
-this.show=uploadImg
+this.show = this.configService.upload_img_enabled;
     
    const isFirstLoad = sessionStorage.getItem('colorFetched') !== 'true';
-
+    
   if (isFirstLoad) {
     // Fetch from API only on first load
     this.use.getActiveColor().subscribe(

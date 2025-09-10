@@ -1,41 +1,40 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import baseUrl from './helper';
-import { imageurl } from './otherNewUrls';
+import { ConfigService } from './config.service';
 
 @Injectable({
   providedIn: 'root',
 })
 export class UserService {
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private configService: ConfigService) {}
 
   //add user
 
   public addUser(user: any) {
-    return this.http.post(`${baseUrl}/auth/register`, user);
+    return this.http.post(`${this.configService.api_url}/auth/register`, user);
   }
 
 public getVersion(){
-  return this.http.get(`${baseUrl}/auth/version`);
+  return this.http.get(`${this.configService.api_url}/auth/version`);
 }
 
 
 
 public  getBgColours(){
 
-  return this.http.get(`${imageurl}/images`,{ responseType: 'text' }); 
+  return this.http.get(`${this.configService.image_url}/images`,{ responseType: 'text' }); 
 }
 
 public selectColor(color:any){
- return this.http.put(`${imageurl}/images/activate/`+color,color);
+ return this.http.put(`${this.configService.image_url}/images/activate/`+color,color);
 }
 
 public getActiveColor(){
-  return this.http.get(`${imageurl}/images/a`,{ responseType: 'text' }); 
+  return this.http.get(`${this.configService.image_url}/images/a`,{ responseType: 'text' }); 
 }
 
 public addColor(data:any){
-  return this.http.post(`${imageurl}/images`,data,{ responseType: 'text' });
+  return this.http.post(`${this.configService.image_url}/images`,data,{ responseType: 'text' });
 }
 
 }

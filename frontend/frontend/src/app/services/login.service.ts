@@ -1,7 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
-import baseUrl from './helper';
+import { ConfigService } from './config.service';
+
+
+
 
 @Injectable({
   providedIn: 'root',
@@ -9,17 +12,19 @@ import baseUrl from './helper';
 export class LoginService {
   public loginStatusSubject = new Subject<boolean>();
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private configService: ConfigService) {}
 
   //current user: which is loggedin
   public getCurrentUser(username) {
-    return this.http.get(`${baseUrl}/${username}`);
+    return this.http.get(`${this.configService.api_url}/${username}`);
   }
 
   //generate token
 
   public generateToken(loginData: any) {
-    return this.http.post(`${baseUrl}/auth/generate-token`, loginData);
+
+    
+    return this.http.post(`${this.configService.api_url}/auth/generate-token`, loginData);
   }
 
   //login user: set token in localStorage

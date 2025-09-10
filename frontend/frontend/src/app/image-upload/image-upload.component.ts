@@ -1,9 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit ,Renderer2} from '@angular/core';
 import Swal from 'sweetalert2';
-import { imageurl } from '../services/otherNewUrls';
 import { FlagsUiService } from '../flags-ui.service';
 import { UserService } from '../services/user.service';
+import { ConfigService } from '../services/config.service';
 
 @Component({
   selector: 'app-image-upload',
@@ -20,7 +20,7 @@ export class ImageUploadComponent implements OnInit {
 
 Colours:any= [] 
 
-  constructor(private http: HttpClient,private renderer: Renderer2,private flagService: FlagsUiService,private userService:UserService) {
+  constructor(private http: HttpClient,private renderer: Renderer2,private flagService: FlagsUiService,private userService:UserService, private configService: ConfigService) {
        this.fetchUploadedImages();
    
   }
@@ -54,7 +54,6 @@ selectColor(color:any){
 
   
 // this.flagService.setColor.subscribe((data:any)=>{
-
 // console.log(":::::::imageui::::data"+data)
 //     } , (error) => {
 //       console.error("Error for activating color colors:", error);})
@@ -131,7 +130,7 @@ this.userService.addColor(obj).subscribe((data)=>{
 
 
 
-    this.http.post(`${imageurl}/api/images/upload`, formData).subscribe({
+    this.http.post(`${this.configService.image_url}/api/images/upload`, formData).subscribe({
       next: () => {
         Swal.fire('Success', 'Image uploaded successfully!', 'success');
         this.description = '';
@@ -145,7 +144,7 @@ this.userService.addColor(obj).subscribe((data)=>{
   }
   imags:any=[];
 fetchUploadedImages() {
-  this.http.get<any[]>(`${imageurl}/api/images`).subscribe({
+  this.http.get<any[]>(`${this.configService.image_url}/api/images`).subscribe({
     next: (images: any[]) => {
 
 this.imags=images
@@ -165,9 +164,9 @@ this.imags=images
   }
 
 setAsBackground(id: any) {
-  const imageUrl = `${imageurl}/api/images/${id}`;
+  const imageUrls = `${this.configService.image_url}/api/images/${id}`;
 
-  this.http.post(`${imageurl}/images/set-background/${id}`, {})
+  this.http.post(`${this.configService.image_url}/images/set-background/${id}`, {})
     .subscribe(() => {
      
       Swal.fire('Success', 'Background set!', 'success');
@@ -175,17 +174,16 @@ setAsBackground(id: any) {
       this.loadBackgroundImage(); // Optional if you want to reload with blob
     });
 
-      this.renderer.setStyle(document.body, 'backgroundImage', `url('${imageUrl}')`);
+      this.renderer.setStyle(document.body, 'backgroundImage', `url('${imageUrls}')`);
       this.renderer.setStyle(document.body, 'backgroundSize', 'cover');
       this.renderer.setStyle(document.body, 'backgroundPosition', 'center');
 
 
 }
 
-
    
 loadBackgroundImage() {
-  this.http.get(`${imageurl}/api/images/background`, { responseType: 'blob' })
+  this.http.get(`${this.configService.image_url}/api/images/background`, { responseType: 'blob' })
     .subscribe(blob => {
       const reader = new FileReader();
       reader.onload = () => {

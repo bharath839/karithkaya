@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatLegacySnackBar } from '@angular/material/legacy-snack-bar';
 import { UserService } from 'src/app/services/user.service';
 import Swal from 'sweetalert2';
 
@@ -9,7 +9,7 @@ import Swal from 'sweetalert2';
   styleUrls: ['./signup.component.css'],
 })
 export class SignupComponent implements OnInit {
-  constructor(private userService: UserService, private snack: MatSnackBar) {}
+  constructor(private userService: UserService, private snack: MatLegacySnackBar) {}
 
   public user = {
     username: '',

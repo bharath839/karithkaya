@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatLegacySnackBar } from '@angular/material/legacy-snack-bar';
 import { CategoryService } from 'src/app/services/category.service';
 import { QuizService } from 'src/app/services/quiz.service';
 import Swal from 'sweetalert2';
@@ -25,7 +25,7 @@ export class AddQuizComponent implements OnInit {
 
   constructor(
     private _cat: CategoryService,
-    private _snack: MatSnackBar,
+    private _snack: MatLegacySnackBar,
     private _quiz: QuizService
   ) {}
 

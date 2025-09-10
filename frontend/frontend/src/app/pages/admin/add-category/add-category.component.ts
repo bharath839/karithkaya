@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatLegacySnackBar } from '@angular/material/legacy-snack-bar';
 import { CategoryService } from 'src/app/services/category.service';
 import Swal from 'sweetalert2';
 
@@ -16,7 +16,7 @@ export class AddCategoryComponent implements OnInit {
 
   constructor(
     private _category: CategoryService,
-    private _snack: MatSnackBar
+    private _snack: MatLegacySnackBar
   ) {}
 
   ngOnInit(): void {}

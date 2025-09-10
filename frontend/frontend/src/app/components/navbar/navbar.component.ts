@@ -1,4 +1,3 @@
-import { ThrowStmt } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { FlagsUiService } from 'src/app/flags-ui.service';
