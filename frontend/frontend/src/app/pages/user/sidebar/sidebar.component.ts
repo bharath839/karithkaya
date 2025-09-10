@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatLegacySnackBar } from '@angular/material/legacy-snack-bar';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { CategoryService } from 'src/app/services/category.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { CategoryService } from 'src/app/services/category.service';
 })
 export class SidebarComponent implements OnInit {
   categories;
-  constructor(private _cat: CategoryService, private _snack: MatLegacySnackBar) {}
+  constructor(private _cat: CategoryService, private _snack: MatSnackBar) {}
 
   ngOnInit(): void {
     this._cat.categories().subscribe(

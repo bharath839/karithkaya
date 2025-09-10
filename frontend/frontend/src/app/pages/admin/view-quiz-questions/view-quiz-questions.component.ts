@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatLegacySnackBar } from '@angular/material/legacy-snack-bar';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { ActivatedRoute } from '@angular/router';
 import { QuestionService } from 'src/app/services/question.service';
 import Swal from 'sweetalert2';
@@ -17,7 +17,7 @@ export class ViewQuizQuestionsComponent implements OnInit {
   constructor(
     private _route: ActivatedRoute,
     private _question: QuestionService,
-    private _snak: MatLegacySnackBar
+    private _snak: MatSnackBar
   ) {}
 
   ngOnInit(): void {

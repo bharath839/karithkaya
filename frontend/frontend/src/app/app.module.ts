@@ -7,23 +7,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 
 // Material Modules
-import { MatLegacyButtonModule } from '@angular/material/legacy-button';
-import { MatLegacyInputModule } from '@angular/material/legacy-input';
-import { MatLegacyFormFieldModule } from '@angular/material/legacy-form-field';
-import { MatLegacySnackBarModule } from '@angular/material/legacy-snack-bar';
-import { MatLegacyCardModule } from '@angular/material/legacy-card';
-import { MatLegacyCardHeaderModule } from '@angular/material/legacy-card';
-import { MatLegacyCardTitleModule } from '@angular/material/legacy-card';
-import { MatLegacyCardSubtitleModule } from '@angular/material/legacy-card';
-import { MatLegacyCardContentModule } from '@angular/material/legacy-card';
-import { MatLegacyCardActionsModule } from '@angular/material/legacy-card';
-import { MatLegacyToolbarModule } from '@angular/material/legacy-toolbar';
-import { MatLegacyIconModule } from '@angular/material/legacy-icon';
-import { MatLegacyListModule } from '@angular/material/legacy-list';
-import { MatLegacySlideToggleModule } from '@angular/material/legacy-slide-toggle';
-import { MatLegacySelectModule } from '@angular/material/legacy-select';
-import { MatLegacyProgressSpinnerModule } from '@angular/material/legacy-progress-spinner';
-import { MatLegacyDividerModule } from '@angular/material/legacy-divider';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatCardModule } from '@angular/material/card';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatSelectModule } from '@angular/material/select';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatDividerModule } from '@angular/material/divider';
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { NgxUiLoaderHttpModule, NgxUiLoaderModule } from 'ngx-ui-loader';
 
@@ -91,28 +86,23 @@ export function initializeApp(configService: ConfigService) {
         AppRoutingModule,
         BrowserAnimationsModule,
         FormsModule,
-        MatLegacyButtonModule,
-        MatLegacyInputModule,
-        MatLegacyFormFieldModule,
-        MatLegacySnackBarModule,
-        MatLegacyCardModule,
-        MatLegacyCardHeaderModule,
-        MatLegacyCardTitleModule,
-        MatLegacyCardSubtitleModule,
-        MatLegacyCardContentModule,
-        MatLegacyCardActionsModule,
-        MatLegacyToolbarModule,
-        MatLegacyIconModule,
-        MatLegacyListModule,
-        MatLegacySlideToggleModule,
-        MatLegacySelectModule,
+        MatButtonModule,
+        MatInputModule,
+        MatFormFieldModule,
+        MatSnackBarModule,
+        MatCardModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatListModule,
+        MatSlideToggleModule,
+        MatSelectModule,
         CKEditorModule,
-        MatLegacyProgressSpinnerModule,
-        MatLegacyDividerModule,
+        MatProgressSpinnerModule,
+        MatDividerModule,
         NgxUiLoaderModule,
         NgxUiLoaderHttpModule.forRoot({ showForeground: true })], providers: [
         authInterceptorProviders,
-        MatLegacySnackBar,
+        MatSnackBar,
         {
             provide: APP_INITIALIZER,
             useFactory: initializeApp,

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatLegacySnackBar } from '@angular/material/legacy-snack-bar';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 
 import { LoginService } from 'src/app/services/login.service';
@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit {
   };
 
   constructor(
-    private snack: MatLegacySnackBar,
+    private snack: MatSnackBar,
     private login: LoginService,
     private router: Router
   ) {}
