@@ -5,134 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38711b46-7c16-4a99-86c4-4e15260de62c" name="Changes" comment="bharath new Repo">
-      <change afterPath="$PROJECT_DIR$/Redis/Redis/src/main/java/com/Redis/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Redis/Redis/src/main/java/com/Redis/controller/RedisController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/new_jwt-Micro/service1/src/main/java/com/codingworld/service1/model/BackGroundColor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/new_jwt-Micro/service1/src/main/java/com/codingworld/service1/repo/BackGroundColorRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Redis/Redis/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/components/navbar/navbar.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/app/components/navbar/navbar.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/components/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/app/components/navbar/navbar.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/components/navbar/navbar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/app/components/navbar/navbar.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/image-upload/image-upload.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/app/image-upload/image-upload.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/image-upload/image-upload.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/app/image-upload/image-upload.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/image-upload/image-upload.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/app/image-upload/image-upload.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/notification/notification.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/app/notification/notification.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/admin/sidebar/sidebar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/admin/sidebar/sidebar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/admin/add-category/add-category.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/admin/add-category/add-category.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/admin/add-question/add-question.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/admin/add-question/add-question.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/admin/add-quiz/add-quiz.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/admin/add-quiz/add-quiz.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/admin/dashboard/dashboard.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/admin/dashboard/dashboard.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/admin/sidebar/sidebar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/admin/sidebar/sidebar.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/rabbitmq.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/app/rabbitmq.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/services/helper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/app/services/helper.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/app/services/user.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/new_jwt-Micro.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway.7z" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway/src/main/java/com/jwt_gateway/GatewayApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway/src/main/java/com/jwt_gateway/config/CorsConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway/src/main/java/com/jwt_gateway/config/DataIntalizeINDb.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway/src/main/java/com/jwt_gateway/config/GatewayConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway/src/main/java/com/jwt_gateway/config/SecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway/src/main/java/com/jwt_gateway/config/WebConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway/src/main/java/com/jwt_gateway/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway/src/main/java/com/jwt_gateway/controller/UserDataController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway/src/main/java/com/jwt_gateway/entity/JwtRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway/src/main/java/com/jwt_gateway/entity/JwtResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway/src/main/java/com/jwt_gateway/entity/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway/src/main/java/com/jwt_gateway/entity/UserData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway/src/main/java/com/jwt_gateway/entity/UserRole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway/src/main/java/com/jwt_gateway/filter/JwtAuthenticationFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway/src/main/java/com/jwt_gateway/repository/RoleRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway/src/main/java/com/jwt_gateway/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway/src/main/java/com/jwt_gateway/repository/UserReposs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway/src/main/java/com/jwt_gateway/service/UserDataServ.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway/src/main/java/com/jwt_gateway/service/UserDetailsServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway/src/main/java/com/jwt_gateway/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway/src/main/java/com/jwt_gateway/service/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway/src/main/java/com/jwt_gateway/util/JwtUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway/src/main/java/com/jwt_gateway/util/UserServDataFIlters.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway/src/test/java/com/jwt_gateway/GatewayApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_jwt-Micro/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/new_jwt-Micro/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_jwt-Micro/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/new_jwt-Micro/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_jwt-Micro/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/new_jwt-Micro/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_jwt-Micro/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/new_jwt-Micro/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_jwt-Micro/rabbitmq-backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/new_jwt-Micro/rabbitmq-backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_jwt-Micro/rabbitmq-backend/src/main/java/com/example/rabbitmqdemo/config/RabbitConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/new_jwt-Micro/rabbitmq-backend/src/main/java/com/example/rabbitmqdemo/config/RabbitConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_jwt-Micro/rabbitmq-backend/src/main/java/com/example/rabbitmqdemo/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/new_jwt-Micro/rabbitmq-backend/src/main/java/com/example/rabbitmqdemo/controller/MessageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_jwt-Micro/rabbitmq-backend/src/main/java/com/example/rabbitmqdemo/service/RabbitMQListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/new_jwt-Micro/rabbitmq-backend/src/main/java/com/example/rabbitmqdemo/service/RabbitMQListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_jwt-Micro/rabbitmq-backend/target/classes/com/example/rabbitmqdemo/config/RabbitConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/new_jwt-Micro/rabbitmq-backend/target/classes/com/example/rabbitmqdemo/config/RabbitConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_jwt-Micro/rabbitmq-backend/target/classes/com/example/rabbitmqdemo/controller/MessageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/new_jwt-Micro/rabbitmq-backend/target/classes/com/example/rabbitmqdemo/controller/MessageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_jwt-Micro/rabbitmq-backend/target/classes/com/example/rabbitmqdemo/service/RabbitMQListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/new_jwt-Micro/rabbitmq-backend/target/classes/com/example/rabbitmqdemo/service/RabbitMQListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_jwt-Micro/service1/src/main/java/com/codingworld/service1/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/new_jwt-Micro/service1/src/main/java/com/codingworld/service1/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_jwt-Micro/service1/src/main/java/com/codingworld/service1/controller/ImageUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/new_jwt-Micro/service1/src/main/java/com/codingworld/service1/controller/ImageUpdate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_jwt-Micro/service1/src/main/java/com/codingworld/service1/services/ImageDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/new_jwt-Micro/service1/src/main/java/com/codingworld/service1/services/ImageDataService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server/src/main/java/com/eurekaserver/server/ServerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server/src/test/java/com/eurekaserver/server/ServerApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/src/main/java/com/codingworld/service1/Service1Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/src/main/java/com/codingworld/service1/config/SecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/src/main/java/com/codingworld/service1/controller/CategoryController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/src/main/java/com/codingworld/service1/controller/DataControl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/src/main/java/com/codingworld/service1/controller/ImageDataController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/src/main/java/com/codingworld/service1/controller/ImageUpdate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/src/main/java/com/codingworld/service1/controller/QuestionController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/src/main/java/com/codingworld/service1/model/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/src/main/java/com/codingworld/service1/model/ImageDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/src/main/java/com/codingworld/service1/model/ImageData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/src/main/java/com/codingworld/service1/model/Question.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/src/main/java/com/codingworld/service1/model/Quiz.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/src/main/java/com/codingworld/service1/repo/CategoryRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/src/main/java/com/codingworld/service1/repo/ImageDataRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/src/main/java/com/codingworld/service1/repo/QuestionRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/src/main/java/com/codingworld/service1/repo/QuizRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/src/main/java/com/codingworld/service1/services/CategoryService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/src/main/java/com/codingworld/service1/services/CategoryServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/src/main/java/com/codingworld/service1/services/ImageDataService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/src/main/java/com/codingworld/service1/services/QuestionService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/src/main/java/com/codingworld/service1/services/QuestionServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/src/main/java/com/codingworld/service1/services/QuizService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/src/main/java/com/codingworld/service1/services/QuizServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service1/src/test/java/com/codingworld/service1/Service1ApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service2/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service2/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service2/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service2/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service2/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service2/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service2/src/main/java/com/codingworld/service1/Service1Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service2/src/main/java/com/codingworld/service1/controller/QuizController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service2/src/main/java/com/codingworld/service1/controller/Service1Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service2/src/main/java/com/codingworld/service1/model/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service2/src/main/java/com/codingworld/service1/model/Question.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service2/src/main/java/com/codingworld/service1/model/Quiz.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service2/src/main/java/com/codingworld/service1/repo/QuizRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service2/src/main/java/com/codingworld/service1/services/QuizService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service2/src/main/java/com/codingworld/service1/services/QuizServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service2/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service2/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service2/src/test/java/com/codingworld/service1/Service1ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/admin/update-quiz/update-quiz.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/admin/update-quiz/update-quiz.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/admin/view-categories/view-categories.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/admin/view-categories/view-categories.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/admin/view-categories/view-categories.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/admin/view-categories/view-categories.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/admin/view-quiz-questions/view-quiz-questions.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/admin/view-quiz-questions/view-quiz-questions.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/login/login.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/login/login.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/profile/profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/profile/profile.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/signup/signup.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/signup/signup.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/user/instructions/instructions.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/user/instructions/instructions.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/user/sidebar/sidebar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/user/sidebar/sidebar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/user/user-dashboard/user-dashboard.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/app/pages/user/user-dashboard/user-dashboard.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/app/services/config.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/app/services/config.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/assets/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/assets/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/frontend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Redis/radis/Redis" beforeDir="false" afterPath="$PROJECT_DIR$/Redis/radis/Redis" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +66,8 @@
         <entry key="$PROJECT_DIR$/.." value="master" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/new_jwt-Micro" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -186,9 +95,10 @@
     "Application.Service1Application.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "slave",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/karithkaya/new_jwt-Micro",
+    "last_opened_file_path": "D:/karithkaya/new_jwt-Micro/new_jwt-Micro",
     "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers"
   }
 }]]></component>

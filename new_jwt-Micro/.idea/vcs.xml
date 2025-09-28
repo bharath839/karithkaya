@@ -2,6 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Redis/Redis" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Redis/radis/Redis" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/new_jwt-Micro" vcs="Git" />
   </component>
 </project>
