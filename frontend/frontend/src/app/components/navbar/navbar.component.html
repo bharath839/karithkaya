@@ -13,9 +13,9 @@
   <a
     *ngIf="!isLoggedIn"
     [routerLink]="'/login'"
-    mat-icon-button
-    class="example-icon favorite-icon"
-    aria-label="Example icon-button with heart icon"
+    mat-button
+    class=""
+    aria-label="Login button"
   >
     Login
   </a>
@@ -23,9 +23,9 @@
   <a
     *ngIf="!isLoggedIn"
     [routerLink]="'/signup'"
-    mat-icon-button
-    class="example-icon favorite-icon mr20 ml20"
-    aria-label="Example icon-button with heart icon"
+    mat-button
+    class=" ml10"
+    aria-label="Register button"
   >
     Register
   </a>
@@ -38,31 +38,30 @@
 <a
     (click)="logout()"
     *ngIf="isLoggedIn"
-    mat-icon-button
-    class="example-icon favorite-icon mr20 ml20"
-    aria-label="Example icon-button with heart icon"
+    mat-button
+    class=" ml10"
+    aria-label="Logout button"
   >
     Logout
   </a>
 
   <button
     *ngIf="isLoggedIn && user"
-    class="example-icon favorite-icon ml20"
+    class="navbar-button ml10"
     mat-button
     routerLink="/admin/profile"
-    aria-label="Example icon-button with heart icon"
+    aria-label="User profile button"
   >
     {{ user.username }}
   </button>
 
 
 
-<button  class="example-icon favorite-icon ml20"
+<button  class=" ml10"
     mat-button (click)="triggerNotification()">Notification</button>
 </mat-toolbar>
-  <app-notification 
+  <app-notification #notificationComponent
  
   [type]="type" 
-  [visible]="showNotification">
-</app-notification>
+></app-notification>
  <!-- [message]="message"  -->

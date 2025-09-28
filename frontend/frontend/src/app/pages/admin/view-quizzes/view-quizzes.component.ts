@@ -1,11 +1,28 @@
 import { Component, OnInit } from '@angular/core';
 import { QuizService } from 'src/app/services/quiz.service';
 import Swal from 'sweetalert2';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { MatCardModule } from '@angular/material/card';
+import { MatListModule } from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-view-quizzes',
   templateUrl: './view-quizzes.component.html',
   styleUrls: ['./view-quizzes.component.css'],
+  standalone: true,
+  imports: [
+    CommonModule,
+    RouterModule,
+    MatCardModule,
+    MatListModule,
+    MatIconModule,
+    MatButtonModule,
+    MatSnackBarModule
+  ],
 })
 export class ViewQuizzesComponent implements OnInit {
   quizzes = [];

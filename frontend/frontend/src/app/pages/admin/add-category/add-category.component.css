@@ -1,3 +1,51 @@
 .w100 {
   width: 100%;
 }
+
+.mt15 {
+  margin-top: 15px !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.ml20 {
+  margin-left: 20px !important;
+}
+.mr20 {
+  margin-right: 20px !important;
+}
+.mt20 {
+  margin-top: 20px !important;
+}
+.mb20 {
+  margin-bottom: 20px !important;
+}
+.ml10 {
+  margin-left: 10px !important;
+}
+.mr10 {
+  margin-right: 10px !important;
+}
+.mt10 {
+  margin-top: 10px !important;
+}
+.mb10 {
+  margin-bottom: 10px !important;
+}
+
+mat-card {
+  max-width: 1000px; /* Increased width */
+  margin: 10px 10px 50px 20px; /* Adjusted margin for positioning */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+mat-card-content {
+  padding: 20px;
+}
+
+.container.text-center.mt15 button {
+  margin-top: 20px;
+  width: 150px;
+}

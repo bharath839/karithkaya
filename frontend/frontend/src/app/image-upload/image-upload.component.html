@@ -1,4 +1,9 @@
 <p>image-upload works!</p>
+
+<div *ngIf="dataLoadingError" style="color: red; padding: 20px; border: 1px solid red; margin: 20px 0;">
+  <p>Error loading data for this page. Please check the browser console for details and ensure the backend services are running.</p>
+</div>
+
 <div class="upload-container mat-elevation-z4">
   <h2>📤 Upload Image</h2>
 

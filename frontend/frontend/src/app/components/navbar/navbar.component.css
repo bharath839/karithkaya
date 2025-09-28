@@ -1,3 +1,66 @@
 .example-spacer {
   flex: 1 1 auto;
 }
+
+.mat-toolbar {
+  padding: 0 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  min-height: 64px;
+}
+
+.mat-toolbar span {
+  font-size: 22px;
+  font-weight: 600;
+  margin-right: 20px;
+}
+
+/* Styling for all navbar buttons (Login, Register, Logout, Username, Notification) */
+.navbar-button {
+  font-size: 17px;
+  font-weight: 500;
+  padding: 0 15px;
+  transition: all 0.3s ease;
+  border-radius: 20px; /* Rounded for notification badge look */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 8px; /* Consistent spacing between buttons */
+  color: #fff; /* White text */
+  background-color: var(--primary-color, #f44336); /* Consistent primary color for background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.navbar-button:hover {
+  background-color: var(--primary-color, #f44336); /* Keep same background color on hover */
+  transform: none; /* Remove lift effect on hover */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Keep same shadow on hover */
+}
+
+/* Ensure the mat-icon within buttons is aligned */
+.mat-icon-button mat-icon {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+/* The default icon button for the menu icon */
+.example-icon {
+  background: none; /* No background for the menu icon */
+  box-shadow: none; /* No shadow */
+  margin-right: 10px; /* Space after the menu icon */
+}
+
+.example-icon:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle hover for the menu icon */
+  transform: none; /* No lift for menu icon */
+  box-shadow: none; /* No shadow on hover for menu icon */
+}
+
+.ml10 {
+  margin-left: 10px; /* Adjusting for finer control */
+}
+
+.mr10 {
+  margin-right: 10px; /* Adjusting for finer control */
+}

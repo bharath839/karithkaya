@@ -1,14 +1,30 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component, OnInit ,Renderer2} from '@angular/core';
 import Swal from 'sweetalert2';
 import { FlagsUiService } from '../flags-ui.service';
 import { UserService } from '../services/user.service';
 import { ConfigService } from '../services/config.service';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card'; // Assuming MatCardModule might be used
 
 @Component({
   selector: 'app-image-upload',
   templateUrl: './image-upload.component.html',
-  styleUrls: ['./image-upload.component.css']
+  styleUrls: ['./image-upload.component.css'],
+  standalone: true,
+  imports: [
+    CommonModule,
+    FormsModule,
+    HttpClientModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    MatCardModule,
+  ]
 })
 export class ImageUploadComponent implements OnInit {
 
@@ -17,6 +33,7 @@ export class ImageUploadComponent implements OnInit {
   imagePreview: string | ArrayBuffer | null = null;
 
   uploadedImages: string[] = [];
+  dataLoadingError: boolean = false; // New flag for data loading errors
 
 Colours:any= [] 
 
@@ -25,14 +42,17 @@ Colours:any= []
    
   }
   ngOnInit(): void {
-        console.log("::::daa:::::::data")
-  this.userService.getBgColours().subscribe((data:any)=>{
-
-        console.log(":::::::::::data")
+        console.log("ImageUploadComponent: Initializing data...")
+  this.userService.getBgColours().subscribe({
+    next: (data:any)=>{
+        console.log("ImageUploadComponent: Background colors fetched successfully.")
       this.Colours =JSON.parse(data) ;
-    } , (error) => {
-      console.error("Error fetching colors:", error);
-    })
+    } ,
+    error: (error) => {
+      console.error("ImageUploadComponent Error fetching colors:", error);
+      this.dataLoadingError = true;
+    }
+  });
   }
 
 selectedColor: string | null = null;
@@ -105,6 +125,8 @@ this.userService.addColor(obj).subscribe((data)=>{
 
 
 
+
+
 }
 
   onFileChange(event: any) {
@@ -130,6 +152,7 @@ this.userService.addColor(obj).subscribe((data)=>{
 
 
 
+
     this.http.post(`${this.configService.image_url}/api/images/upload`, formData).subscribe({
       next: () => {
         Swal.fire('Success', 'Image uploaded successfully!', 'success');
@@ -149,10 +172,11 @@ fetchUploadedImages() {
 
 this.imags=images
       this.uploadedImages = images.map(image => image); // Extract URLs into the array
-      console.log("Loaded image URLs:", this.uploadedImages);
+      console.log("ImageUploadComponent: Loaded image URLs:", this.uploadedImages);
     },
     error: err => {
-      console.error('Failed to fetch images', err);
+      console.error('ImageUploadComponent Failed to fetch images', err);
+      this.dataLoadingError = true;
     }
   });
 }

@@ -1,0 +1,6 @@
+.scrollable-sidebar {
+  max-height: 650px; /* Adjusted to show approximately 13 items */
+  overflow-y: auto;
+  border: 1px solid #eee; /* Optional: for visual boundary */
+  padding: 5px;
+}

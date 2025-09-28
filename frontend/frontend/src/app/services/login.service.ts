@@ -16,7 +16,7 @@ export class LoginService {
 
   //current user: which is loggedin
   public getCurrentUser(username) {
-    return this.http.get(`${this.configService.api_url}/${username}`);
+    return this.http.get(`${this.configService.api_url}/auth/${username}`);
   }
 
   //generate token

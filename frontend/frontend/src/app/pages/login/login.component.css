@@ -1,3 +1,80 @@
 .full-width {
-  width: 100%;
+  width: 80%;
+  margin-left: 60px;
+
+}
+
+.mat-card {
+  margin-top: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px; /* Adjusted max-width for the card */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Ensure the parent container of the card also supports centering */
+.bootstrap-wrapper .container .row .col-md-6 {
+  display: flex;
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content if needed, though card has margin-top */
+  flex-direction: column; /* Stack children vertically */
+}
+
+.mat-card h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #3f51b5;
+}
+
+.mat-form-field {
+  margin-bottom: 20px; /* Increased space between form fields */
+}
+
+/* Styling for the input elements themselves within mat-form-field */
+.mat-form-field .mat-input-element {
+  font-size: 17px; /* Slightly larger font size for input text */
+  height: 0.1em; /* Adjusted height for the input box */
+  padding: 0.9em 0; /* Adjusted padding */
+}
+
+/* Styling for the mat-label */
+.mat-form-field .mat-label {
+  font-size: 1em; /* Ensure label is a good size */
+}
+
+/* Styling for the mat-hint (e.g., Valid User Name) */
+.mat-hint {
+  font-size: 13px;
+  color: #757575;
+}
+
+.mat-raised-button {
+  padding: 12px 30px; /* Adjusted padding for buttons */
+  font-size: 17px; /* Adjusted font size for buttons */
+  font-weight: 500;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  margin: 0 8px; /* Adjusted margin for consistent spacing */
+}
+
+.mat-raised-button[color="primary"] {
+  background-color: #3f51b5;
+}
+
+.mat-raised-button[color="accent"] {
+  background-color: #ff4081;
+}
+
+.mat-raised-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.container.text-center img {
+  max-width: 120px;
+  margin-bottom: 20px;
 }

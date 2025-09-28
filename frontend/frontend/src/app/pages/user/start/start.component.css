@@ -1,0 +1,32 @@
+.timer-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 150px;
+}
+
+.timer-card mat-card-header {
+  width: 100%;
+  justify-content: center;
+}
+
+.timer-card mat-card-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-section-container {
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Ensure it takes full width of its parent */
+}
+
+.timer-section-container .timer-card {
+  max-width: 400px; /* Adjust as needed for desired card width */
+  width: 100%; /* Make it fill max-width */
+}

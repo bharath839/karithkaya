@@ -1,16 +1,35 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewChild } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { FlagsUiService } from 'src/app/flags-ui.service';
 import { RabbitmqService } from 'src/app/rabbitmq.service';
 import { LoginService } from 'src/app/services/login.service';
 import { UserService } from 'src/app/services/user.service';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { NotificationComponent } from '../../notification/notification.component';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
+  standalone: true,
+  imports: [
+    CommonModule,
+    RouterModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatListModule,
+    NotificationComponent, // Re-added NotificationComponent
+  ],
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent implements OnInit, OnDestroy {
+  @ViewChild(NotificationComponent) notificationComponent!: NotificationComponent;
+
   isLoggedIn = false;
   user = null;
 version:any='';
@@ -28,10 +47,10 @@ color:any = 'red';
 
   // message: string = '';
   type: 'success' | 'error' | 'info' | 'warning' = 'info';
-  visible: boolean = false;
+  // Removed: visible: boolean = false; 
 
   private subscription!: Subscription;
-    showNotification : boolean = false;
+  // Removed: showNotification : boolean = false; 
 // message = 'Operation successful';
 
 // type = 'success';
@@ -100,36 +119,36 @@ color:any = 'red';
     this.subscription = this.websocketService.messageStream$.subscribe((msg) => {
       // this.message = msg;
       this.type = 'info'; // Or parse based on backend message
-      this.visible = true;
+      // Removed: this.visible = true;
       if(msg){
-       this.showNotification=true;
-      }setTimeout(() => {
-       
-      }, 3000);
+        // Removed: this.showNotification=true;
+        this.notificationComponent.showNotificationWithTimeout(msg, this.type); // Call method on NotificationComponent
+      }
+      // Removed: setTimeout(() => {
+      // Removed: }, 3000);
     });
 
 
 
-     this.flagService.currentMessage$.subscribe(data => {
+    this.flagService.currentMessage$.subscribe(data => {
       this.colour = data;
     });
   }
 
 
-triggerNotification() {
-  console.log('!!!!!!!!!!!'+ this.visible);
+  triggerNotification() {
+    // Removed: console.log('!!!!!!!!!!!'+ this.visible);
 
-  // this.message = 'Data saved successfully!';
-  this.type = 'success';
-  this.showNotification= !this.showNotification;
-//  this.showNotification=!this.visible;
- setTimeout(() => {
-  
-  // this.visible=!this.visible;
-    
-  console.log('Timeout!');
-}, 1000);
-}
+    // Removed: this.message = 'Data saved successfully!';
+    this.type = 'success';
+    // Removed: this.showNotification= !this.showNotification;
+    // Removed: //  this.showNotification=!this.visible;
+    // Removed: setTimeout(() => {
+    // Removed: //  this.visible=!this.visible;
+    // Removed: //  console.log('Timeout!');
+    // Removed: }, 1000);
+    this.notificationComponent.toggleVisibility(); // Call toggle method on NotificationComponent
+  }
 
 
   public logout() {

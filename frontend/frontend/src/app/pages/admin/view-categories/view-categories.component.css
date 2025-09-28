@@ -1,0 +1,30 @@
+mat-card {
+  max-width: 1000px; /* Increased width */
+  margin: 10px 10px 50px 20px; /* Adjusted margin for positioning */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+mat-list {
+  padding: 20px;
+}
+
+.container.text-center.mt20 button {
+  margin-top: 20px;
+  width: 180px;
+}
+
+mat-expansion-panel {
+  margin-bottom: 10px;
+}
+
+mat-panel-title,
+mat-panel-description {
+  flex-grow: 0;
+}
+
+mat-accordion.scrollable-accordion {
+  max-height: 500px; /* Adjust as needed to show approx 7 items */
+  overflow-y: auto;
+  border: 1px solid #ddd; /* Optional: for visual boundary */
+  padding: 5px;
+}

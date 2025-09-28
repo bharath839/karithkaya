@@ -11,7 +11,8 @@ export class ConfigService {
   constructor(private http: HttpClient) { }
 
   loadConfig() {
-    return this.http.get('./assets/config.json')
+    const timestamp = new Date().getTime();
+    return this.http.get(`./assets/config.json?t=${timestamp}`)
       .toPromise()
       .then(data => {
         this.config = data;

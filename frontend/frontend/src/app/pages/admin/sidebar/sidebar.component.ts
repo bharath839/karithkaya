@@ -3,11 +3,24 @@ import { FlagsUiService } from 'src/app/flags-ui.service';
 import { LoginService } from 'src/app/services/login.service';
 import { UserService } from 'src/app/services/user.service';
 import { ConfigService } from 'src/app/services/config.service';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { MatCardModule } from '@angular/material/card';
+import { MatListModule } from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.css']
+  styleUrls: ['./sidebar.component.css'],
+  standalone: true,
+  imports: [
+    CommonModule,
+    RouterModule,
+    MatCardModule,
+    MatListModule,
+    MatIconModule,
+  ],
 })
 export class SidebarComponent implements OnInit {
 show:boolean=false

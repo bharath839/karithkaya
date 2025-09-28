@@ -1,13 +1,19 @@
 <mat-card>
   <h1>All Categories</h1>
-  <mat-list>
-    <mat-list-item *ngFor="let c of categories">
-      <mat-icon mat-list-icon>category</mat-icon>
-      <div mat-line>{{ c.title }}</div>
-      <div mat-line>{{ c.description }}</div>
-      <mat-divider></mat-divider>
-    </mat-list-item>
-  </mat-list>
+
+  <mat-accordion class="scrollable-accordion">
+    <mat-expansion-panel *ngFor="let c of categories" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title> {{ c.title }} </mat-panel-title>
+       
+      </mat-expansion-panel-header>
+      <p>{{ c.description }}</p>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <div *ngIf="categories.length === 0" class="container text-center mt20" style="color: gray;">
+    <p>No categories found. Please add new categories.</p>
+  </div>
 
   <div class="container text-center mt20">
     <button routerLink="/admin/add-category" mat-raised-button color="accent">

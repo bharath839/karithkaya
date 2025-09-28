@@ -16,10 +16,18 @@ export class NormalGuard  {
     | Promise<boolean | UrlTree>
     | boolean
     | UrlTree {
-    if (this.login.isLoggedIn() && this.login.getUserRole() == 'NORMAL') {
+    console.log('NormalGuard: Checking canActivate...');
+    const isLoggedIn = this.login.isLoggedIn();
+    const userRole = this.login.getUserRole();
+    console.log('NormalGuard: isLoggedIn:', isLoggedIn);
+    console.log('NormalGuard: userRole:', userRole);
+
+    if (isLoggedIn && userRole == 'NORMAL') {
+      console.log('NormalGuard: Access granted.');
       return true;
     }
 
+    console.log('NormalGuard: Access denied. Redirecting to login.');
     this.router.navigate(['login']);
     return false;
   }

@@ -2,5 +2,5 @@
   "api_url": "http://localhost:8080",
   "image_url": "http://localhost:9001",
   "rabbitmq_url": "http://localhost:8001",
-  "upload_img_enabled": false
+  "upload_img_enabled": true
 }
