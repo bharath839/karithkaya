@@ -4,7 +4,10 @@
   border: 2px solid #ff4081;
   border-radius: 50%;
 }
-
+/* .mat-card {
+  margin: 20px;
+  padding: 20px;
+} */
 .table {
   width: 100%;
   border-collapse: collapse;

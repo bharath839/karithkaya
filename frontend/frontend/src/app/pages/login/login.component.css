@@ -1,71 +1,57 @@
 .full-width {
-  width: 80%;
-  margin-left: 60px;
-
+  width: 100%; /* keep full input width */
 }
 
 .mat-card {
-  margin-top: 50px;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 40px 30px;       /* normal padding */
+  min-height: 550px;        /* increase height for breathing space */
+  max-width: 400px;         /* card width */
+  margin: 90px auto;        /* center horizontally with top margin */
+  border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  max-width: 400px; /* Adjusted max-width for the card */
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;       /* center align text & buttons */
 }
 
-/* Ensure the parent container of the card also supports centering */
-.bootstrap-wrapper .container .row .col-md-6 {
+.logincard {
   display: flex;
-  justify-content: center; /* Horizontally center content */
-  align-items: center; /* Vertically center content if needed, though card has margin-top */
-  flex-direction: column; /* Stack children vertically */
+  justify-content: center;  /* center horizontally */
+  align-items: center;      /* center vertically */
+  min-height: 80vh;         /* card in middle of viewport */
 }
 
 .mat-card h1 {
   font-size: 28px;
   font-weight: 700;
-  margin-bottom: 25px;
+  margin: 30px 0;           /* space above & below title */
   color: #3f51b5;
 }
 
-.mat-form-field {
-  margin-bottom: 20px; /* Increased space between form fields */
-}
-
-/* Styling for the input elements themselves within mat-form-field */
-.mat-form-field .mat-input-element {
-  font-size: 17px; /* Slightly larger font size for input text */
-  height: 0.1em; /* Adjusted height for the input box */
-  padding: 0.9em 0; /* Adjusted padding */
-}
-
-/* Styling for the mat-label */
-.mat-form-field .mat-label {
-  font-size: 1em; /* Ensure label is a good size */
-}
-
-/* Styling for the mat-hint (e.g., Valid User Name) */
-.mat-hint {
-  font-size: 13px;
-  color: #757575;
+.form {
+width: 70% ;
+margin-left: 15%;
+  margin-bottom: 20px;      /* space between inputs */
 }
 
 .mat-raised-button {
-  padding: 12px 30px; /* Adjusted padding for buttons */
-  font-size: 17px; /* Adjusted font size for buttons */
+  padding: 10px 30px;       /* normal button size */
+  font-size: 17px;
   font-weight: 500;
   border-radius: 5px;
   transition: all 0.3s ease;
-  margin: 0 8px; /* Adjusted margin for consistent spacing */
+  margin: 15px auto;        /* space below buttons */
+  display: block;
+  width: 100%;
+  max-width: 200px;         /* prevent too wide */
 }
 
 .mat-raised-button[color="primary"] {
   background-color: #3f51b5;
+  color: #fff;
 }
 
 .mat-raised-button[color="accent"] {
   background-color: #ff4081;
+  color: #fff;
 }
 
 .mat-raised-button:hover {
@@ -75,6 +61,7 @@
 
 /* Image styling */
 .container.text-center img {
-  max-width: 120px;
-  margin-bottom: 20px;
+  max-width: 150px;
+  margin-top: 30px;         /* space above logo */
+  margin-bottom: 30px;      /* space below logo */
 }
