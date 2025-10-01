@@ -11,7 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { NotificationComponent } from '../../notification/notification.component';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -36,7 +36,8 @@ version:any='';
   constructor(public login: LoginService,
     public use:UserService,
     private websocketService: RabbitmqService,
-    private flagService: FlagsUiService
+    private flagService: FlagsUiService,
+    private router: Router 
   
   ) {}
 
@@ -153,8 +154,9 @@ color:any = 'red';
 
   public logout() {
     this.login.logout();
-    window.location.reload();
-    // this.login.loginStatusSubject.next(false);
+    // window.location.reload();
+      this.router.navigate(['/home']); 
+    this.login.loginStatusSubject.next(false);
   }
     ngOnDestroy() {
     this.subscription.unsubscribe();

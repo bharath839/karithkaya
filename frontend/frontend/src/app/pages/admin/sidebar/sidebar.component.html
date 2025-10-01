@@ -20,9 +20,11 @@
       <mat-icon mat-list-icon>add</mat-icon> Add Quiz
     </button>
     
-     <button  mat-list-item *ngIf="show"  routerLink="/admin/imageSettings">
-      <mat-icon mat-list-icon>edit</mat-icon> Theam Setting
-    </button>
+     @if (show) {
+      <button mat-list-item routerLink="/admin/image-upload">
+        <mat-icon mat-list-icon>edit</mat-icon> Theme Setting
+      </button>
+    }
     
     <button mat-list-item  (click)="logout()" routerLink="/home">
       <mat-icon mat-list-icon>logout</mat-icon> Logout

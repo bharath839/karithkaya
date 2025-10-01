@@ -23,7 +23,7 @@ import { MatIconModule } from '@angular/material/icon';
   ],
 })
 export class SidebarComponent implements OnInit {
-show:boolean=false
+show:any=false
   constructor(public login: LoginService,
      public use:UserService,
         private flagService: FlagsUiService,
